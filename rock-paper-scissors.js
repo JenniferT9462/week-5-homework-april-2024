@@ -3,6 +3,17 @@ let params = new URLSearchParams(document.location.search);
 let player1 = params.get("p1");
 let player2 = params.get("p2");
 
+// Making the player names display on the page
+let p1Name = params.get("name1");
+let p2Name = params.get("name2");
+if (p1Name){
+  document.getElementById("n1").innerHTML = p1Name
+}
+if (p2Name) {
+  document.getElementById("n2").innerHTML = p2Name
+}
+
+//Rock Paper Scissors
 if(player1 === "rock" && player2 === "scissors") {
   document.getElementById("result").innerHTML = "Player 1 Wins!"
 }
@@ -33,6 +44,7 @@ else if (player1 === "paper" && player2 === "paper") {
 }
 
 // TODO: Add some HTML and CSS to make the page nice
+// Added some css to the body of my html document
 
 
 // Bonus: research innerHTML to put the result of the game into the element with id of "result".
@@ -42,8 +54,7 @@ else if (player1 === "paper" && player2 === "paper") {
 // Added type and name to input tags to save answers
 
 // Bonus: allow players to enter their names and display them on the page.
-
-
+// Added a new search param for player 1 and player 2..Then did an if statement to display the value in a html element...Not sure if there is a better way.
 
 // Bonus: add additional feature you might think of. 
 // Added a Draw condition

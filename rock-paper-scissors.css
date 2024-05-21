@@ -1,3 +1,8 @@
 #result {
   border-bottom: solid;
 }
+body {
+  background-color: slateblue;
+  color: yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
