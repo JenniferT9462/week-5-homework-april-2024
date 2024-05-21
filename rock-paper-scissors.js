@@ -7,31 +7,33 @@ let player2 = params.get("p2");
 let p1Name = params.get("name1");
 let p2Name = params.get("name2");
 if (p1Name){
-  document.getElementById("n1").innerHTML = p1Name
+  document.getElementById("n1").innerHTML = p1Name;
 }
 if (p2Name) {
-  document.getElementById("n2").innerHTML = p2Name
+  document.getElementById("n2").innerHTML = p2Name;
 }
+// Saving players name
+
 
 //Rock Paper Scissors
 if(player1 === "rock" && player2 === "scissors") {
-  document.getElementById("result").innerHTML = "Player 1 Wins!"
+  document.getElementById("result").innerHTML = `${p1Name} Wins!`
 }
 // TODO: write all the conditions to indicate who will win the game.
 else if (player1 === "paper" && player2 === "rock") {
-  document.getElementById("result").innerHTML = "Player 1 Wins!"
+  document.getElementById("result").innerHTML = `${p1Name} Wins!`
 }
 else if (player1 === "scissors" && player2 === "paper") {
-  document.getElementById("result").innerHTML = "Player 1 Wins!"
+  document.getElementById("result").innerHTML = `${p1Name} Wins!`
 }
 else if (player2 === "rock" && player1 === "scissors") {
-  document.getElementById("result").innerHTML = "Player 2 Wins!"
+  document.getElementById("result").innerHTML = `${p2Name} Wins!`
 }
 else if (player2 === "paper" && player1 === "rock") {
-  document.getElementById("result").innerHTML = "Player 2 Wins!"
+  document.getElementById("result").innerHTML = `${p2Name} Wins!`
 }
 else if (player2 === "scissors" && player1 === "paper") {
-  document.getElementById("result").innerHTML = "Player 2 Wins!"
+  document.getElementById("result").innerHTML = `${p2Name} Wins!`
 }
 else if (player1 === "scissors" && player2 === "scissors") {
   document.getElementById("result").innerHTML = "It's a Draw!"
@@ -54,7 +56,8 @@ else if (player1 === "paper" && player2 === "paper") {
 // Added type and name to input tags to save answers
 
 // Bonus: allow players to enter their names and display them on the page.
-// Added a new search param for player 1 and player 2..Then did an if statement to display the value in a html element...Not sure if there is a better way.
+// Added a new search param for player 1 and player 2..
+// Then did an if statement to display the value in a html element...Not sure if there is a better way.
 
 // Bonus: add additional feature you might think of. 
 // Added a Draw condition

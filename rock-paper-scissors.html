@@ -10,11 +10,17 @@
 <body>
   <h1>Rock Paper Scissors</h1>
   
-  <p></p>
-  <h5>Player 1 Name:</h5>
-  <p id="n1"></p>
-  <h5>Player 2 Name:</h5>
-  <p id="n2"></p>
+<div id="nameContainer">
+  <div class="names">
+    <h5>Player 1 Name:</h5>
+    <p id="n1"></p>
+  </div>
+  
+  <div class="names">
+    <h5>Player 2 Name:</h5>
+    <p id="n2"></p>
+  </div>
+</div>
 
   <p> The result is:</p>
   <p id="result"> the winner </p>
@@ -23,15 +29,16 @@
   <form>
     <label>Player 1: What is your name?</label>
     <input name=name1>
-
+    <br>
     <label>Player 1: What do you choose? rock, paper or scissors</label>
-    <input type="password" name=p1><br><br>
-
+    <input type="password" name=p1>
+    <br><br>
     <label>Player 2: What is your name?</label>
     <input name=name2>
-
+    <br>
     <label>Player 2: What do you choose? rock, paper, or scissors</label>
     <input type="password" name=p2 >
+   
 
     <input type="submit" value="Submit">
   </form>
