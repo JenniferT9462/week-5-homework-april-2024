@@ -36,11 +36,14 @@ else if (player1 === "paper" && player2 === "paper") {
 
 
 // Bonus: research innerHTML to put the result of the game into the element with id of "result".
-let result = 
-document.getElementById("result").innerHTML
+// Added innerhtml to the if statements
+
 // Bonus: add a form to allow for player to enter their guesses. Hint: Try <input type="password" name=p1 /> in a form in the html
+// Added type and name to input tags to save answers
 
 // Bonus: allow players to enter their names and display them on the page.
+
+
 
 // Bonus: add additional feature you might think of. 
 // Added a Draw condition

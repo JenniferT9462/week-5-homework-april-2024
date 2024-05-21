@@ -10,6 +10,10 @@
 <body>
   <h1>ROCK PAPER SCISSORS</h1>
   <p>Have a look at rock-paper-scissors.js to find the TODO's for this assignment. </p>
+  <h5>Player 1 Name:</h5>
+  <p id="player1"></p>
+  <h5>Player 2 Name:</h5>
+  <p id="player2"></p>
 
   <p> The result is:</p>
   <p id="result"> the winner </p>
@@ -17,13 +21,18 @@
   <!--BONUS A form so players can enter their choices and names-->
   <form>
     <label>Player 1: What is your name?</label>
-    <input>
+    <input id="p1Input">
+
     <label>Player 1: What do you choose? rock, paper or scissors</label>
-    <input><br>
+    <input type="password" name=p1 ><br>
+
     <label>Player 2: What is your name?</label>
-    <input>
+    <input id="p2Input">
+
     <label>Player 2: What do you choose? rock, paper, or scissors</label>
-    <input>
+    <input type="password" name=p2 >
+
+    <input type="submit" value="Submit">
   </form>
 </body>
 </html>
