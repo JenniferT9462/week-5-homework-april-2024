@@ -3,11 +3,25 @@ let params = new URLSearchParams(document.location.search);
 let player1 = params.get("p1");
 let player2 = params.get("p2");
 
-if(player1 === "rock" && player2 === "paper") {
-  document.write("player 2 wins!")
+if(player1 === "rock" && player2 === "scissors") {
+  document.write("player 1 wins!")
 }
 // TODO: write all the conditions to indicate who will win the game.
-
+else if (player1 === "paper" && player2 === "rock") {
+  document.write("Player 1 Wins!")
+}
+else if (player1 === "scissors" && player2 === "paper") {
+  document.write("Player 1 Wins!")
+}
+else if (player2 === "rock" && player1 === "scissors") {
+  document.write("Player 2 Wins!")
+}
+else if (player2 === "paper" && player1 === "rock") {
+  document.write("Player 2 Wins!")
+}
+else if (player2 === "scissors" && player1 === "paper") {
+  document.write("Player 2 Wins!")
+}
 
 // TODO: Add some HTML and CSS to make the page nice
 
